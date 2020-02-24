@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'Raleway Semibold';
+  src: url("../font/Raleway-SemiBold.eot");
+  src: url("../font/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../font/Raleway-SemiBold.woff") format("woff"), url("../font/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url("../font/Raleway-Bold.eot");
+  src: url("../font/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Raleway-Bold.woff") format("woff"), url("../font/Raleway-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url("../font/Raleway-Medium.eot");
+  src: url("../font/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../font/Raleway-Medium.woff") format("woff"), url("../font/Raleway-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Museo Slab 500';
+  src: url("../font/MuseoSlab-500.eot");
+  src: url("../font/MuseoSlab-500.eot?#iefix") format("embedded-opentype"), url("../font/MuseoSlab-500.woff") format("woff"), url("../font/MuseoSlab-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto Slab Regular';
+  src: url("../font/RobotoSlab-Regular.eot");
+  src: url("../font/RobotoSlab-Regular.eot?#iefix") format("embedded-opentype"), url("../font/RobotoSlab-Regular.woff") format("woff"), url("../font/RobotoSlab-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.header {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  background-attachment: fixed; }
+
+.container {
+  max-width: 1110px;
+  margin: auto; }
+  .container-title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Museo Slab 500', sans-serif;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-top: 200px; }
+  .container-subtitle {
+    font-size: 26px;
+    font-family: 'Raleway Medium', sans-serif;
+    color: #fff;
+    line-height: 1.5; }
+  .container-btn {
+    max-width: 500px;
+    margin-top: 70px; }
+  .container-btn-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style: none;
+    padding: 0; }
+  .container-btn-google {
+    padding: 22px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 220px;
+    text-align: center; }
+    .container-btn-google img {
+      width: 30px;
+      height: 30px;
+      position: absolute; }
+    .container-btn-google a {
+      color: #3e3e3e;
+      font-size: 20px;
+      font-family: 'Raleway Semibold';
+      text-decoration: none;
+      padding-left: 35px; }
+  .container-btn-learn-more {
+    padding: 22px 30px;
+    background-color: #4f9edb;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center; }
+    .container-btn-learn-more a {
+      color: #3e3e3e;
+      font-size: 20px;
+      font-family: 'Raleway Semibold';
+      text-decoration: none; }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 130px;
+  border-bottom: 1px solid #fff; }
+  .navbar-logo {
+    width: 30%; }
+  .navbar-top-menu {
+    width: 70%; }
+  .navbar-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .navbar-menu {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Raleway Semibold'; }
+    .navbar-menu a {
+      color: #fff;
+      text-decoration: none; }
+  .navbar-auth {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Raleway Semibold';
+    background: #4ca3e6;
+    border-radius: 10px; }
+    .navbar-auth a {
+      color: #fff;
+      text-decoration: none;
+      padding: 20px 30px;
+      display: block; }
