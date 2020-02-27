@@ -1,15 +1,38 @@
 //настройки шрифтов
 @import 'fonts'
+$subtitle: #494949
+$title: #7c7c7c
 
+.title
+	font-size: 18px
+	font-family: 'Roboto Slab Regular'
+	color: #7c7c7c
+.subtitle
+	font-size: 24px
+	font-family: 'Roboto Slab Regular'
+	text-transform: uppercase
+	color: #494949
+	position: relative
+::after
+	content: ""
+	display: block
+	position: absolute
+	top: 40px
+	height: 1px
+	background: #2eb0ec
+	width: 2%
+	left: 49%
 
 *
 	box-sizing: border-box
+
+/*******   Шапка   *******/
 .header
 	min-height: 100vh
 	background-size: cover
 	background-position: center
 	align-content: center
-	background-attachment: fixed
+	
 
 
 .container
@@ -104,3 +127,49 @@
 			display: block
 
 
+	
+/*******   Услуги   *******/
+.services
+	text-align: center
+	margin-top: 90px
+	margin-bottom: 150px
+.ourservices
+	display: flex
+	&-web-development, &-photography, &-vector-artist
+	&-services-img
+		padding-top: 80px
+		display: flex
+		justify-content: space-around
+		align-items: center
+		height: 100px
+	span
+		font-family: 'Raleway Bold'
+		font-size: 18px
+		color: $subtitle
+		display: block
+		padding-top: 40px
+	p
+		font-family: 'Raleway Medium'
+		font-size: 14px
+		color: $title
+		padding-top: 30px
+
+.costomization
+	background-image: url(../images/bg-costomization.png)
+	padding-top: 115px
+	padding-bottom: 110px
+	img
+		position: absolute
+		left: 0
+	
+	&-features
+		text-align: right
+		span
+			font-size: 22px
+			font-family: 'Raleway Semibold'
+			color: #b3b4b4
+		h3
+			font-family: 'Raleway Semibold'
+			font-size: 32px
+			color: $subtitle
+			
