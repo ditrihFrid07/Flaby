@@ -39,6 +39,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url("MyriadPro-Regular.eot");
+  src: url("MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("MyriadPro-Regular.woff") format("woff"), url("MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .title {
   font-size: 18px;
   font-family: 'Roboto Slab Regular';
@@ -58,7 +66,7 @@
   display: block;
   position: absolute;
   top: 40px;
-  height: 1px;
+  height: 2px;
   background: #2eb0ec;
   width: 2%;
   left: 49%;
@@ -92,7 +100,7 @@
   margin-top: 200px;
 }
 
-.container-subtitle {
+.container-subtitlee {
   font-size: 26px;
   font-family: 'Raleway Medium', sans-serif;
   color: #fff;
@@ -129,6 +137,11 @@
           align-items: center;
   width: 220px;
   text-align: center;
+  cursor: pointer;
+}
+
+.container-btn-google:hover {
+  background-color: #f2f2f2;
 }
 
 .container-btn-google img {
@@ -151,6 +164,11 @@
   border-radius: 10px;
   width: 220px;
   text-align: center;
+  cursor: pointer;
+}
+
+.container-btn-learn-more:hover {
+  background-color: #3a92d7;
 }
 
 .container-btn-learn-more a {
@@ -204,18 +222,22 @@
 
 .navbar-auth {
   list-style: none;
+}
+
+.navbar-auth-btn {
   text-transform: uppercase;
   font-size: 17px;
   font-family: 'Raleway Semibold';
   background: #4ca3e6;
   border-radius: 10px;
+  border: none;
+  padding: 20px 20px 20px 30px;
+  color: #fff;
+  cursor: pointer;
 }
 
-.navbar-auth a {
-  color: #fff;
-  text-decoration: none;
-  padding: 20px 30px;
-  display: block;
+.navbar-auth-btn:hover {
+  background: #3698e3;
 }
 
 /*******   Услуги   *******/
@@ -259,19 +281,24 @@
   padding-top: 30px;
 }
 
+/*******   Костомизация   *******/
 .costomization {
-  background-image: url(../images/bg-costomization.png);
+  background-image: url(../images/costomization/bg-costomization.png);
   padding-top: 115px;
   padding-bottom: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.costomization img {
+.costomization .image-bg .image {
   position: absolute;
   left: 0;
 }
 
 .costomization-features {
-  text-align: right;
+  width: 50%;
+  float: right;
 }
 
 .costomization-features span {
@@ -282,7 +309,121 @@
 
 .costomization-features h3 {
   font-family: 'Raleway Semibold';
-  font-size: 32px;
+  font-size: 29px;
   color: #494949;
+}
+
+.costomization-features p {
+  font-family: 'Raleway Medium';
+  color: #7c7c7c;
+  font-size: 20px;
+}
+
+.costomization-features-list {
+  padding-top: 40px;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.costomization-features-list li {
+  font-family: 'Myriad Pro Regular';
+  font-size: 14px;
+  color: #7c7c7c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.costomization-features-list li img {
+  padding-right: 20px;
+}
+
+.costomization-features-button {
+  text-transform: uppercase;
+  font-family: 'Myriad Pro Regular';
+  font-size: 14px;
+  color: #fff;
+  background: #66d4f4;
+  border: none;
+  padding: 19px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 45px;
+}
+
+.costomization-features-button:hover {
+  background: #4ecdf2;
+}
+
+/*******   Иные услуги   *******/
+.other-services {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.other-services .title, .other-services .subtitle {
+  text-align: center;
+  display: block;
+}
+
+.other-services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.other-services-block {
+  width: 30%;
+  margin-top: 80px;
+}
+
+.other-services-block img {
+  position: absolute;
+}
+
+.other-services-block span {
+  padding-left: 55px;
+  display: block;
+  padding-top: 8px;
+  font-size: 18px;
+  color: #494949;
+  font-family: 'Myriad Pro Regular';
+}
+
+.other-services-block p {
+  font-size: 14px;
+  color: #7c7c7c;
+  font-family: 'Myriad Pro Regular';
+  padding-left: 55px;
+  padding-top: 10px;
+  line-height: 1.5;
+}
+
+/*******   Отзывы   *******/
+.reviews {
+  background-image: url(../images/reviews/reviews.png);
+  padding-top: 50px;
+}
+
+.reviews .title, .reviews .subtitle {
+  display: block;
+  text-align: center;
+}
+
+.reviews-block {
+  margin-top: 110px;
 }
 /*# sourceMappingURL=style.css.map */
