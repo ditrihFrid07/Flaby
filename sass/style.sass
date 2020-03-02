@@ -13,7 +13,7 @@ $title: #7c7c7c
 	text-transform: uppercase
 	color: #494949
 	position: relative
-::after
+::before
 	content: ""
 	display: block
 	position: absolute
@@ -257,3 +257,107 @@ $title: #7c7c7c
 		text-align: center
 	&-block
 		margin-top: 110px
+
+	&-carousel 
+		padding-bottom: 100px
+	&-slide
+		background: #fff
+		border-radius: 10px
+		width: 80%
+		margin: 0 auto
+	&-author-img
+		position: relative
+		top: 0
+		left: 45%
+	&-author
+		text-align: center
+		display: block
+		font-size: 20px
+		font-weight: 900
+		font-family: 'Myriad Pro Regular'
+		color: $subtitle
+		padding-top: 30px
+	&-post
+		text-align: center
+		display: block
+		font-size: 15px
+		font-family: 'Myriad Pro Regular'
+		color: $title
+	&-text
+		text-align: center
+		font-size: 18px
+		font-family: 'Myriad Pro Regular'
+		color: $title
+		padding: 45px 75px 110px 75px
+
+
+/*******   Ресурсы   *******/
+.resourse
+	&-block
+		margin-top: 150px
+		margin-bottom: 150px
+		display: flex
+	&-text
+		padding-right: 80px
+		.span-top
+			font-family: 'Raleway Semibold'
+			font-size: 22px
+			color: $subtitle
+		.span-down
+			display: block
+			font-family: 'Raleway Medium'
+			font-size: 20px
+			color: $title
+			padding-bottom: 20px
+		h3
+			font-family: 'Raleway Semibold'
+			font-size: 32px
+			color: $subtitle
+		p
+			font-family: 'Raleway Medium'
+			font-size: 14px
+			color: $subtitle
+			line-height: 1.5
+
+
+
+/*******   Цены   *******/
+.price
+	background: #f4fbfc
+	padding-top: 65px
+	.title, .subtitle
+		display: block
+		text-align: center
+	&-block
+		display: flex
+		justify-content: space-around
+		margin-top: 90px
+		padding-bottom: 140px
+	&-package
+		border: 1px solid #eaf1f2
+		background: #fff
+		border-radius: 15px
+		width: 30%
+		img
+			margin: 45px auto
+			display: block
+		.name-pack
+			display: block
+			text-align: center
+			font-size: 16px
+			font-family: 'Raleway Bold'
+			color: $subtitle
+		.price-pack
+			display: block
+			text-align: center
+			font-size: 72px
+			font-family: 'Raleway Extra Bold'
+			font-weight: 900
+			color: #3dc0ef
+			sup
+				font-size: 20px
+				font-family: 'Raleway Medium'
+				padding-right: 5px
+			strong
+				font-size: 20px
+				font-family: 'Raleway Medium'

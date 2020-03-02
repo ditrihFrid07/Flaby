@@ -19,6 +19,16 @@ font-style: normal;
 }
 
 @font-face {
+    font-family: 'Raleway Extra Bold';
+    src: url('Raleway-ExtraBold.eot');
+    src: url('Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('Raleway-ExtraBold.woff') format('woff'),
+    url('Raleway-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
 font-family: 'Raleway Medium';
 src: url('../font/Raleway-Medium.eot');
 src: url('../font/Raleway-Medium.eot?#iefix') format('embedded-opentype'),

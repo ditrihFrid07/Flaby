@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="sass/style.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<title>Floby</title>
 </head>
 <body>
@@ -132,11 +134,106 @@
 			<span class="title">Get know About</span>
 			<h3 class="subtitle">what customer say</h3>
 			<div class="reviews-block">
-				<div class="slider">
-					
+				<div id="carousel" class="reviews-carousel">
+					<div class="reviews-slide">
+						<img class="reviews-author-img" src="images/reviews/author-image.svg" alt="author">
+						<span class="reviews-author">Sourabh B.</span>
+						<span class="reviews-post">Co Founder of Mew</span>
+						<p class="reviews-text">Great Team with great experience, i would reguler recommended to 
+						all that you will get better support by working with this awesome team and their expert members :)</p>
+					</div>
+
+					<div class="reviews-slide">
+						<img class="reviews-author-img" src="images/reviews/author-image.svg" alt="author">
+						<span class="reviews-author">John Cee</span>
+						<span class="reviews-post">IT Join</span>
+						<p class="reviews-text">Great Team with great experience, i would reguler recommended to 
+						all that you will get better support by working with this awesome team and their expert members :)</p>
+					</div>
+
+					<div class="reviews-slide">
+						<img class="reviews-author-img" src="images/reviews/author-image.svg" alt="author">
+						<span class="reviews-author">Bress Bro</span>
+						<span class="reviews-post">Full Stack</span>
+						<p class="reviews-text">Great Team with great experience, i would reguler recommended to 
+						all that you will get better support by working with this awesome team and their expert members :)</p>
+					</div>
 				</div>
 			</div>
 		 </div>
 	 </section>
+
+	<section class="resourse">
+		<div class="container">
+			<div class="resourse-block">
+				<div class="resourse-text">
+					<span class="span-top">Feel free to download our</span>
+					<h3>Great Resourse for free</h3>
+					<span class="span-down">There are many variations of passages of Lorem Ipsum available & majorityalteration</span>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin 
+						literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney 
+						College in Virginia</p>
+				</div>
+				<div class="resourse-img">
+					<img src="images/resourse/mockup-bg.png" alt="Great Resourse for free">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="price">
+		<div class="container">
+			<span class="title">Get Idea About</span>
+			<h3 class="subtitle">Pricing plan</h3>
+			<div class="price-block">
+				<div class="price-package">
+					<img src="images/price/book.svg" alt="Student">
+					<span class="name-pack">Student</span>
+					<span class="price-pack"><sup>$</sup>39<strong>/mo</strong></span>
+					<ul class="list-pack">
+						<li class="active">6 GB storage</li>
+						<li class="active">Fast Brandwidht</li>
+						<li class="not-active">Responsive</li>
+						<li class="not-active">Customization</li>
+					</ul>
+				</div>
+
+				<div class="price-package">
+					<img src="images/price/bag.svg" alt="Student">
+					<span class="name-pack">Professional</span>
+					<span class="price-pack"><sup>$</sup>59<strong>/mo</strong></span>
+					<ul class="list-pack">
+						<li class="active">6 GB storage</li>
+						<li class="active">Fast Brandwidht</li>
+						<li class="active">Responsive</li>
+						<li class="not-active">Customization</li>
+					</ul>
+				</div>
+
+				<div class="price-package">
+					<img src="images/price/shopping-bag.svg" alt="Student">
+					<span class="name-pack">Unlimited</span>
+					<span class="price-pack"><sup>$</sup>99<strong>/mo</strong></span>
+					<ul class="list-pack">
+						<li class="active">6 GB storage</li>
+						<li class="active">Fast Brandwidht</li>
+						<li class="active">Responsive</li>
+						<li class="active">Customization</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="libs/slick/slick.min.js" type="text/javascript"></script>
+
+<script>
+	$(document).ready(function(){
+		$('#carousel').slick({
+			autoplay: true
+		});
+	});
+</script>
 </body>
 </html>
