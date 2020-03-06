@@ -3,6 +3,7 @@
 $subtitle: #494949
 $title: #7c7c7c
 
+
 .title
 	font-size: 18px
 	font-family: 'Roboto Slab Regular'
@@ -94,6 +95,7 @@ $title: #7c7c7c
 			font-size: 20px
 			font-family: 'Raleway Semibold'
 			text-decoration: none
+
 					
 .navbar
 	display: flex
@@ -102,6 +104,8 @@ $title: #7c7c7c
 	border-bottom: 1px solid #fff
 	&-logo
 		width: 30%
+	&-m-menu-link
+		display: none
 	&-top-menu
 		width: 70%
 	&-list
@@ -512,3 +516,77 @@ $title: #7c7c7c
 				span
 					font-weight: bold
 					color: $subtitle
+
+
+
+@media screen and (min-width: 992px) 
+	.m-menu
+		display: none
+	.navbar
+		.mmenu
+			display: none
+		&-top-menu
+			display: block
+	
+	.container
+		&-title
+			font-size: 30px
+			padding-left: 15px
+		&-subtitlee
+			font-size: 20px
+			padding-left: 15px
+
+
+@media screen and (max-width: 991px) 
+	.header
+		background: #42A8F6
+		
+	.m-menu
+		position: fixed
+		right: 0
+		top: 0
+		height: 100vh
+		width: 100%
+		list-style: none
+		line-height: 3
+		margin: 0
+		background: #42A8F6
+		display: flex
+		z-index: 99
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		transition: 0.2s
+		transform: translateX(100%)
+	.m-menu__active
+		transform: translateX(0%)
+		.close-menu
+			position: fixed
+			top: 0
+			right: 5rem
+			font-size: 3rem
+			color: #fff
+			&:hover
+				cursor: pointer
+	.navbar
+		.mmenu
+			display: block
+			color: #ffffff	
+			position: fixed
+			top: 0
+			right: 5rem
+			font-size: 2rem
+		&-logo
+			margin-left: 20px
+		&-top-menu
+			display: none
+	
+	.container
+		&-title
+			font-size: 25px
+			text-align: center
+		&-subtitlee
+			font-size: 18px
+			text-align: center
+		&-btn
+			margin: 0 auto

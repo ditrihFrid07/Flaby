@@ -7,15 +7,28 @@
 	<link rel="stylesheet" type="text/css" href="sass/style.css">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
 	<title>Floby</title>
 </head>
 <body>
+	<ul class="m-menu">
+		<li class="close-menu">&times;</li>
+		<li class="navbar-menu"><a href="">home</a></li>
+		<li class="navbar-menu"><a href="">services</a></li>
+		<li class="navbar-menu"><a href="">portfolio</a></li>
+		<li class="navbar-menu"><a href="">blog</a></li>
+		<li class="navbar-menu"><a href="">contact us</a></li>
+		<li class="navbar-auth"><button class="navbar-auth-btn">Login</button></li>
+	</ul>
 	 <header class="header" style="background-image: url(images/header/bg-header.png);">
 			<div class="container">
 				<div class="navbar">
 					<div class="navbar-logo">
 						<img src="images/header/logo.png" alt="Floby">
 					</div>
+					<a href="" class="mmenu">
+						<i class="fa fa-bars"></i>
+					</a>
 					<div class="navbar-top-menu">
 						<ul class="navbar-list">
 							<li class="navbar-menu"><a href="">home</a></li>
@@ -30,9 +43,15 @@
 				<h1 class="container-title">
 					flat  +  free  =  flaby
 				</h1>
-				<span class="container-subtitlee">
-					A Modern Flat design corporate template <br> for free download with all great features <br> and trendy look.
-				</span>
+				<p class="container-subtitlee">
+					A Modern Flat design corporate template
+				</p>
+				<p class="container-subtitlee">
+					for free download with all great features
+				</p>
+				<p class="container-subtitlee">
+					and trendy look.
+				</p>
 				<div class="container-btn">
 					<ul class="container-btn-list">
 						<li class="container-btn-google">
@@ -315,6 +334,19 @@
 
 <script>
 	$(document).ready(function(){
+		
+		var link = $('.mmenu');
+		var menu = $('.m-menu');
+		var close = $('.close-menu');
+		link.on('click', function(event) {
+			event.preventDefault();
+			menu.toggleClass('m-menu__active');
+		});
+		close.on('click', function(event) {
+			event.preventDefault();
+			menu.toggleClass('m-menu__active');
+		});
+
 		$('#carousel').slick({
 			autoplay: true
 		});
