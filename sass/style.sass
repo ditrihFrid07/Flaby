@@ -518,7 +518,7 @@ $title: #7c7c7c
 					color: $subtitle
 
 
-
+/*******   Responsive   *******/
 @media screen and (min-width: 992px) 
 	.m-menu
 		display: none
@@ -538,6 +538,9 @@ $title: #7c7c7c
 
 
 @media screen and (max-width: 991px) 
+	.container
+		max-width: 90%
+		
 	.header
 		background: #42A8F6
 		
@@ -572,7 +575,7 @@ $title: #7c7c7c
 		.mmenu
 			display: block
 			color: #ffffff	
-			position: fixed
+			position: absolute
 			top: 0
 			right: 5rem
 			font-size: 2rem
@@ -590,3 +593,68 @@ $title: #7c7c7c
 			text-align: center
 		&-btn
 			margin: 0 auto
+	.image-bg
+		display: none
+	.costomization-features
+		width: 90%
+		text-align: center
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.other-services-block
+		width: 50%
+			
+	.resourse-img	
+		display: none
+			
+@media screen and (max-width: 767px) 
+	.container
+		&-title
+			font-size: 25px
+			text-align: center
+		&-subtitlee
+			font-size: 18px
+			text-align: center
+		&-btn
+			margin: 0 auto
+		.name, .mail
+			width: 80%
+		.subscribe-btn
+			width: 80%
+	.price-block
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.price-package
+		width: 80%
+		margin-top: 10px
+		margin-bottom: 10px
+	.ourservices
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+	.our-block
+		border-bottom: 1px solid #f7f7f7
+	.other-services-block
+		width: 90%
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		border-bottom: 1px solid #f7f7f7
+		img
+			position: static
+		span
+			padding-left: 0 
+	.costomization-features
+		li
+			a
+				margin: 0
+				padding: 0
+@media screen and (max-width: 600px) 
+	.footer-block
+		display: flex
+		flex-wrap: wrap
